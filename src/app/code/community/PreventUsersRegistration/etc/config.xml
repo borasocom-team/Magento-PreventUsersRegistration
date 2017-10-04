@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Boraso_PreventUsersRegistration>
+            <version>0.1.0</version>
+        </Boraso_PreventUsersRegistration>
+    </modules>
+    <global>
+        <models>
+            <boraso_preventusersregistration>
+                <class>Boraso_PreventUsersRegistration_Model</class>
+                <resourceModel>boraso_preventusersregistration_resource</resourceModel>
+            </boraso_preventusersregistration>
+            <boraso_preventusersregistration_resource>
+                <class>Boraso_PreventUsersRegistration_Model_Resource</class>
+            </boraso_preventusersregistration_resource>
+        </models>
+        <blocks>
+            <boraso_preventusersregistration>
+                <class>Boraso_PreventUsersRegistration_Block</class>
+            </boraso_preventusersregistration>
+        </blocks>
+        <helpers>
+            <boraso_preventusersregistration>
+                <class>Boraso_PreventUsersRegistration_Helper</class>
+            </boraso_preventusersregistration>
+        </helpers>
+    </global>
+
+    <frontend>
+        <events>
+            <controller_action_predispatch_customer_account_create>
+                <observers>
+                    <boraso_preventusersregistration_controller_action_predispatch>
+                        <type>singleton</type>
+                        <class>boraso_preventusersregistration/observer</class>
+                        <method>controllerActionPredispatchCustomerAccountCreate</method>
+                    </boraso_preventusersregistration_controller_action_predispatch>
+                </observers>
+            </controller_action_predispatch_customer_account_create>
+        </events>
+    </frontend>
+
+    <default>
+        <preventusersregistration>
+            <settings>
+                <allowusersregistration>1</allowusersregistration>
+            </settings>
+        </preventusersregistration>
+    </default>
+
+</config>
