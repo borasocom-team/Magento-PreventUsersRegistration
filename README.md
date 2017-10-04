@@ -25,10 +25,10 @@ Template file list
 ------------------
 These files have at least one link to the registration page. It must be wrapped as shown above.
 
-1. /app/design/frontend/linkspa/default/template/page/html/header.phtml
-1. /app/design/frontend/linkspa/default/template/persistent/checkout/onepage/login.phtml
-1. /app/design/frontend/linkspa/default/template/persistent/customer/form/login.phtml
-1. /app/design/frontend/linkspa/default/template/customer/form/login.phtml ([unused?](https://magento.stackexchange.com/a/187996/50130))
+1. /app/design/frontend/custom_package_name/default/template/page/html/header.phtml
+1. /app/design/frontend/custom_package_name/default/template/persistent/checkout/onepage/login.phtml
+1. /app/design/frontend/custom_package_name/default/template/persistent/customer/form/login.phtml
+1. /app/design/frontend/custom_package_name/default/template/customer/form/login.phtml ([unused?](https://magento.stackexchange.com/a/187996/50130))
 
 
 
